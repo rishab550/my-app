@@ -158,7 +158,7 @@ const SignIn = () => {
           )}
         </div>
         <div className="bg-gray-200 flex flex-row px-16 py-2 text-black rounded-b-lg text-sm shadow-sm border hover:bg-white">
-          <Link href="/signup">Don't have an Account? Sign Up</Link>
+          <Link href="/signup">Not having an account? Sign Up</Link>
         </div>
       </div>
     </>

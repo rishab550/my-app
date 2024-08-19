@@ -4,7 +4,7 @@ import axios from "axios";
 import React, { useEffect, useState } from "react";
 import toast from "react-hot-toast";
 
-const verifyEmail = () => {
+const VerifyEmail = () => {
   const [user, setUser] = useState({
     token: "",
   });
@@ -35,7 +35,7 @@ const verifyEmail = () => {
   useEffect(() => {
     const newURL = window.location.search.split("=")[1];
     setUser({ ...user, token: newURL });
-  }, []);
+  }, [user]);
 
   useEffect(() => {
     if (user.token.length > 0) {
@@ -56,4 +56,4 @@ const verifyEmail = () => {
   );
 };
 
-export default verifyEmail;
+export default VerifyEmail;

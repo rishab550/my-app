@@ -45,7 +45,7 @@ const PasswordReset = () => {
   useEffect(() => {
     const newURL = window.location.search.split("=")[1];
     setUser({ ...user, token: newURL });
-  }, []);
+  }, [user]);
 
   return (
     <div>
