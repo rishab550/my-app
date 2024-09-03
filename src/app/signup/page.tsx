@@ -154,7 +154,7 @@ const SignUp = () => {
         </div>
         <div className="bg-gray-200 flex flex-row px-16 py-2 text-black rounded-b-lg text-sm shadow-md border hover:bg-white">
           {" "}
-          <Link href="http://localhost:3000/signin">
+          <Link href={`${process.env.NEXTAUTH_URL}/signin`}>
             Already have an account? Sign In
           </Link>
         </div>
