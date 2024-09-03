@@ -55,12 +55,16 @@ const SignIn = () => {
 
   const handleGoogleSignIn = async (e: any) => {
     e.preventDefault();
-    await signIn("google", { callbackUrl: "/home" });
+    await signIn("google", {
+      callbackUrl: "https://my-app-one-flax-16.vercel.app/home",
+    });
   };
 
   const handleGithubSignIn = async (e: any) => {
     e.preventDefault();
-    await signIn("github", { callbackUrl: "/home" });
+    await signIn("github", {
+      callbackUrl: "https://my-app-one-flax-16.vercel.app/home",
+    });
   };
 
   const handleOTPLogin = (e: any) => {
